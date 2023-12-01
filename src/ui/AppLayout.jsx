@@ -11,7 +11,7 @@ function AppLayout() {
   return (
     <div className={styles.appLayout}>
       <Header />
-      <div>{isLoading ? <Loader /> : <Outlet />}</div>{' '}
+      <div className={styles.content}>{isLoading ? <Loader /> : <Outlet />}</div>
     </div>
   );
 }
