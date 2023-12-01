@@ -1,0 +1,16 @@
+.teamsBox {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 535px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

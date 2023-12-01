@@ -1,0 +1,10 @@
+@import '../sass/main.scss';
+
+.error {
+  padding: 2rem;
+
+  a {
+    @include style-anchor();
+    cursor: pointer;
+  }
+}

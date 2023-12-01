@@ -1,0 +1,19 @@
+.teamBox {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+
+  .navChain {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .navLink {
+    text-decoration: none;
+    color: inherit;
+  }
+}

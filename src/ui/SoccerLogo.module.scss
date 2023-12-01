@@ -1,0 +1,16 @@
+.svg {
+  display: none;
+
+  path {
+    fill: inherit;
+  }
+}
+
+.iconSoccer {
+  width: 5rem;
+  height: 5rem;
+
+  .ic1 {
+    fill: var(--color-gray);
+  }
+}

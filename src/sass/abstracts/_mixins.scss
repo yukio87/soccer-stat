@@ -1,0 +1,11 @@
+@mixin style-anchor {
+  text-decoration: none;
+  color: var(--color-main);
+  font-size: 1.4rem;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: #eab308;
+    text-decoration: underline;
+  }
+}
