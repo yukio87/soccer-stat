@@ -4,7 +4,7 @@ import styles from './ItemCard.module.scss';
 
 function ItemCard({ item }) {
   return (
-    <Link to={String(item.id)} className={styles.itemCardWrapper}>
+    <Link to={`/soccer-stat/${item.id}`} className={styles.itemCardWrapper}>
       <div className={styles.itemCard}>
         <p>{item.name}</p>
         <p>{item.area.name}</p>

@@ -28,25 +28,25 @@ function App() {
       errorElement: <Error />,
       children: [
         {
-          path: '/',
+          path: '/soccer-stat/',
           element: <Competitions />,
           loader: competitionsLoader,
           errorElement: <Error />,
         },
         {
-          path: '/:leagueId',
+          path: '/soccer-stat/:leagueId',
           element: <CalendarCompetitions />,
           loader: matchesCompetitionsLoader,
           errorElement: <Error />,
         },
         {
-          path: '/teams',
+          path: '/soccer-stat/teams',
           element: <Teams />,
           loader: teamsLoader,
           errorElement: <Error />,
         },
         {
-          path: '/teams/:teamId',
+          path: '/soccer-stat/teams/:teamId',
           element: <CalendarTeam />,
           loader: matchesTeamLoader,
           errorElement: <Error />,

@@ -1,5 +1,6 @@
 {
   "name": "soccerstat",
+  "homepage": "https://yukio87.github.io/soccer-stat/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

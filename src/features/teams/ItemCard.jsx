@@ -8,7 +8,7 @@ function ItemCard({ item }) {
   const { width } = useScreenSize();
 
   return (
-    <Link to={`/teams/${item.id}`} className={styles.itemCardWrapper}>
+    <Link to={`/soccer-stat/teams/${item.id}`} className={styles.itemCardWrapper}>
       <div className={styles.itemCard}>
         <p>{width <= WIDTH_SCREEN_MD ? item.shortName : item.name}</p>
         <div className={styles.imgWrapper}>

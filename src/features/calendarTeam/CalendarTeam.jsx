@@ -53,7 +53,7 @@ function CalendarTeam() {
     >
       <div className={styles.teamBox}>
         <p className={styles.navChain}>
-          <Link to="/teams" className={styles.navLink}>
+          <Link to="/soccer-stat/teams" className={styles.navLink}>
             Команды
           </Link>{' '}
           &gt; {!isloadingTeam ? dataTeam.data.name : ''}

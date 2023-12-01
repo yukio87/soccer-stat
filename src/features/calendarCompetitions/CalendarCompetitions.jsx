@@ -43,7 +43,7 @@ function CalendarCompetitions() {
     >
       <div className={styles.calendarBox}>
         <p className={styles.navChain}>
-          <Link to="/" className={styles.navLink}>
+          <Link to="/soccer-stat" className={styles.navLink}>
             Лиги
           </Link>{' '}
           &gt; {matches.competition.name}
