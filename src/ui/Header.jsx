@@ -7,10 +7,10 @@ function Header() {
     <header className={styles.header}>
       <SoccerLogo />
 
-      <NavLink className={styles.navLink} to="/soccer-stat">
+      <NavLink className={styles.navLink} to="/soccer-stat" end>
         Лиги
       </NavLink>
-      <NavLink className={styles.navLink} to="/soccer-stat/teams">
+      <NavLink className={styles.navLink} to="/soccer-stat/teams" end>
         Команды
       </NavLink>
     </header>

@@ -28,7 +28,7 @@ function App() {
       errorElement: <Error />,
       children: [
         {
-          path: '/soccer-stat/',
+          path: '/soccer-stat',
           element: <Competitions />,
           loader: competitionsLoader,
           errorElement: <Error />,
