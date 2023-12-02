@@ -5,6 +5,7 @@ import { API_URL } from '../utils/constants';
 const API_TOKEN = import.meta.env.VITE_API_TOKEN;
 
 // Временное решение (ошибка CORS policy)
+// https://cors-anywhere.herokuapp.com/corsdemo
 const corsAnywhere = 'https://cors-anywhere.herokuapp.com/';
 
 export async function getCompetitions() {
