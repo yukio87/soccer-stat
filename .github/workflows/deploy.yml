@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+env:
+  VITE_API_TOKEN: ${{ secrets.VITE_API_TOKEN }}
 
 jobs:
   build:
@@ -23,7 +25,9 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: npm run build
+        run: |
+          npm run build
+          echo "${{ env.VITE_API_TOKEN }}"
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
