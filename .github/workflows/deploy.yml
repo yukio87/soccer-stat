@@ -17,7 +17,7 @@ jobs:
         run:
           npm run dev
         env:
-          VITE_API_TOKEN: ${{ secrets.VITE_API_TOKEN }}
+          VITE_API_TOKEN: ${{ env.VITE_API_TOKEN }}
       
   build:
     name: Build
