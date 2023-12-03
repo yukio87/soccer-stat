@@ -8,6 +8,17 @@ env:
   VITE_API_TOKEN: ${{ secrets.VITE_API_TOKEN }}
 
 jobs:
+  dev:
+    name: Dev
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Dev
+        run:
+          npm run dev
+        env:
+          VITE_API_TOKEN: ${{ secrets.VITE_API_TOKEN }}
+      
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -27,7 +38,6 @@ jobs:
       - name: Build project
         run: |
           npm run build
-          echo "${{ env.VITE_API_TOKEN }}"
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
